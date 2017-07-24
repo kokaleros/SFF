@@ -1,0 +1,180 @@
+body { 
+	
+  background: url('../img/bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ad2116;
+  color: #fff;
+  font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.clock {
+  text-align: center;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.clock-text {
+  font-size: 2em;
+   text-shadow: 1px 1px 3px #000000;
+   font-weight: 100;
+}
+
+.lSSlideWrapper {
+  border: 5px solid rgba(0,0,0,.5);
+}
+
+.signup {
+  background-color: #2a0a0a;
+  padding: 20px;
+}
+
+.signup h1 {
+     text-shadow: 1px 1px 3px #000000;
+}
+
+.signup p {
+     text-shadow: 1px 1px 3px #000000;
+}
+
+
+.form-control {
+  border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    margin: 10px;
+    color: #000;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: #fce9e8;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -ms-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.btn {
+  border-radius: 0px;
+  background-color: #DA291C;
+  color: #fff;
+  border: none;
+  margin: 10px;
+      -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+  color: #DA291C;
+  background-color: #fff;
+      -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.btn-lg {
+  padding: 12px 40px;
+}
+
+.form-control::-webkit-input-placeholder { color: #2a0a0a; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #2a0a0a; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #2a0a0a; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #2a0a0a; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #2a0a0a; }  /* Microsoft Edge */
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowpadding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-default {
+  border-radius: 0px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #fff;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: none;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: #DA291C;
+}
+
+.navbar-default .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.active {
+  background-color: none;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #DA291C;
+}
+
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #DA291C;
+  background-color: transparent;
+}
+
+.navbar-nav li .dropdown-menu {
+  background-color: #000;
+  min-width: 0px;
+  padding: 2px;
+}
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #fff;
+  background-color: #DA291C;
+}
+
+::selection {
+  background: #000; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #000; /* Gecko Browsers */
+}
