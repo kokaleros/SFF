@@ -185,6 +185,6 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 .thumbnail {
 	border: none;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.2);
 	border-radius: 0;
 }
