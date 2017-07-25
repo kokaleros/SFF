@@ -73,7 +73,6 @@
 
       <div class="col-xs-8">
         <div class="clock"></div>
-        <div class="clock-text text-center">nedelja dana sati minuta sekundi</div>
       </div>
 
       <div class="col-xs-2">
@@ -166,11 +165,11 @@
   <script>
   $('.clock').countdown('2017/8/11', function(event) {
   var $this = $(this).html(event.strftime(''
-    + '<span>%w</span> '
-    + '<span>%d</span> '
-    + '<span>%H</span> '
-    + '<span>%M</span> '
-    + '<span>%S</span> '));
+    + '<span class="tajmer">%w</span>nedelje'
+    + '<span class="tajmer">%d</span>dana'
+    + '<span class="tajmer">%H</span>sati'
+    + '<span class="tajmer">%M</span>minuta'
+    + '<span class="tajmer">%S</span>sekundi'));
 });</script>
 <!-- SLIDER -->
     <script>
