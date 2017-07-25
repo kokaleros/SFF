@@ -182,3 +182,9 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .tajmer {
   font-size: 5em;
 }
+
+.thumbnail {
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 0;
+}
