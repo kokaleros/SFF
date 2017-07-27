@@ -72,7 +72,12 @@
       </div>
 
       <div class="col-xs-8">
-        <div class="clock"></div>
+        <div class="clock">
+            <!--<div class="countDownHolder">-->
+                <!--<span class="tajmer">00</span>-->
+                <!--<p>dana</p>-->
+            <!--</div>-->
+        </div>
       </div>
 
       <div class="col-xs-2">
@@ -162,15 +167,16 @@
     <script src="js/lightslider.js"></script>
     <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
-  <script>
-  $('.clock').countdown('2017/8/11', function(event) {
-  var $this = $(this).html(event.strftime(''
-    + '<span class="tajmer">%w</span>nedelje'
-    + '<span class="tajmer">%d</span>dana'
-    + '<span class="tajmer">%H</span>sati'
-    + '<span class="tajmer">%M</span>minuta'
-    + '<span class="tajmer">%S</span>sekundi'));
-});</script>
+
+<script>
+    $('.clock').countdown('2017/8/11', function (event) {
+        var $this = $(this).html(event.strftime(''
+            + '<div class="countDownHolder"><span class="tajmer">%d</span><p>dana</p></div>'
+            + '<div class="countDownHolder"><span class="tajmer">%H</span><p>sati</p></div>'
+            + '<div class="countDownHolder"><span class="tajmer">%M</span><p>minuta</p></div>'
+            + '<div class="countDownHolder"><span class="tajmer">%S</span><p>sekundi</p></div>'));
+    });
+</script>
 <!-- SLIDER -->
     <script>
        $(document).ready(function() {
