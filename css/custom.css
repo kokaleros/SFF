@@ -269,6 +269,11 @@ input:focus:-ms-input-placeholder {
     color: #fff;
     text-decoration: underline;
     font-weight: bold;
+        -webkit-transition: color 0.05s ease-in-out;
+-moz-transition: color 0.05s ease-in-out;
+-ms-transition: color 0.05s ease-in-out;
+-o-transition: color 0.05s ease-in-out;
+transition: color 0.05s ease-in-out;
 }
 
 .linkovi:hover {
