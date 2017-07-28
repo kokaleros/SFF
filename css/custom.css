@@ -260,3 +260,7 @@ input:focus:-ms-input-placeholder {
         margin-right: 20px;
     }
 }
+
+.videopadding {
+    padding: 15px;
+}
