@@ -286,3 +286,28 @@ transition: color 0.05s ease-in-out;
 -o-transition: color 0.05s ease-in-out;
 transition: color 0.05s ease-in-out;
 }
+
+.navbar-header {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.navbar-default .navbar-toggle {
+    border:2px solid #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #DA291C;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+.nav li {
+    padding-left: 15px;
+}
