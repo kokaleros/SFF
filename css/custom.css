@@ -281,10 +281,10 @@ transition: color 0.05s ease-in-out;
     text-decoration: underline;
     font-weight: bold;
     -webkit-transition: color 0.05s ease-in-out;
--moz-transition: color 0.05s ease-in-out;
--ms-transition: color 0.05s ease-in-out;
--o-transition: color 0.05s ease-in-out;
-transition: color 0.05s ease-in-out;
+    -moz-transition: color 0.05s ease-in-out;
+    -ms-transition: color 0.05s ease-in-out;
+    -o-transition: color 0.05s ease-in-out;
+    transition: color 0.05s ease-in-out;
 }
 
 .navbar-header {
@@ -310,4 +310,17 @@ transition: color 0.05s ease-in-out;
 
 .nav li {
     padding-left: 15px;
+}
+
+.social-feed-container{
+    max-width: 100%;
+}
+
+.social-feed-container .social-feed-element {
+    margin-top: 0px !important;
+    max-width: 31%;
+    display: block;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
 }
