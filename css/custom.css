@@ -324,3 +324,7 @@ transition: color 0.05s ease-in-out;
     margin-right: 2%;
     margin-bottom: 20px;
 }
+
+#bx-pager {
+    background-color: #000;
+}
