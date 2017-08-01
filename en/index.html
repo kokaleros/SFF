@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SVI SMO MI IZ ISTOG FILMA</title>
+    <title>SVI SMO MI IZ ISTOG FILMA | HOME</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="../css/lightslider.css" />
+        <link href="../css/jquery.bxslider.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;subset=latin-ext" rel="stylesheet">
 	<!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
@@ -88,33 +88,18 @@
         
       <div class="row">
       <div class="col-xs-12"><!-- SLIDER SA THUMBNAILOVIMA -->
-                <div class="item">            
-            <div class="clearfix">
-                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                <li data-thumb="../img/thumb/slide1t.jpg"> 
-                        <img src="../img/slides/slide1.jpg" />
-                         </li>
-                    <li data-thumb="../img/thumb/slide2t.jpg"> 
-                        <img src="../img/slides/slide2.jpg" />
-                         </li>
-                    <li data-thumb="../img/thumb/slide3t.jpg"> 
-                        <img src="../img/slides/slide3.jpg" />
-                         </li>
-                    <li data-thumb="../img/thumb/slide4t.jpg"> 
-                        <img src="../img/slides/slide4.jpg" />
-                         </li>
-                    <li data-thumb="../img/thumb/slide5t.jpg"> 
-                        <img src="../img/slides/slide5.jpg" />
-                         </li>
-                    <li data-thumb="../img/thumb/slide6t.jpg"> 
-                        <img src="../img/slides/slide6.jpg" />
-                         </li>
-                    <li data-thumb="../img/thumb/slide7t.jpg"> 
-                        <img src="../img/slides/slide7.jpg" />
-                         </li>
-                </ul>
-            </div>
-        </div>
+
+			<ul class="bxslider">
+  				<li><a href="#"><img src="../img/slides/slide1.jpg" /></a></li>
+  				<li><a href="about.html"><img src="../img/slides/slide2.jpg" /></a></li>
+			</ul>
+
+<div id="bx-pager">
+  <a data-slide-index="0" href=""><img src="../img/thumb/slide1t.jpg" /></a>
+  <a data-slide-index="1" href=""><img src="../img/thumb/slide2t.jpg" /></a>
+</div>
+
+
         </div>
       </div>
 
@@ -164,8 +149,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/lightslider.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
   <script src="../js/jquery.countdown.min.js"></script>
 
 <script>
@@ -178,27 +163,10 @@
     });
 </script>
 <!-- SLIDER -->
-    <script>
-       $(document).ready(function() {
-      $("#content-slider").lightSlider({
-                loop:true,
-                keyPress:true
-            });
-            $('#image-gallery').lightSlider({
-                gallery:true,
-                item:1,
-                thumbItem:7,
-                thumbMargin:30,
-                slideMargin: 0,
-                speed:1000,
-                auto:true,
-                loop:true,
-                mode:'slide',
-                onSliderLoad: function() {
-                    $('#image-gallery').removeClass('cS-hidden');
-                }  
-            });
-    });
-    </script>
+<script>
+$('.bxslider').bxSlider({
+  pagerCustom: '#bx-pager'
+});
+</script>
   </body>
 </html>
