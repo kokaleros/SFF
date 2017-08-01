@@ -167,10 +167,20 @@ input:focus:-ms-input-placeholder {
     background-color: transparent;
     font-weight: bold;
     border-radius: none;
+    -webkit-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -ms-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
 }
 
 .navbar-default .navbar-nav li a:hover {
     color: #DA291C;
+    -webkit-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -ms-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
 }
 
 .navbar-default .container {
@@ -191,6 +201,11 @@ input:focus:-ms-input-placeholder {
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
     background-color: #DA291C;
+        -webkit-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -ms-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
 }
 
 .navbar-default .navbar-nav > li > a:focus {
