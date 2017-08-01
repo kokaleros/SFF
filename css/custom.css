@@ -345,6 +345,18 @@ transition: color 0.05s ease-in-out;
     margin-bottom: 20px;
 }
 
+/* Stilovi BX-Pager */
+
 #bx-pager {
     background-color: #000;
+}
+
+#bx-pager img {
+    border: 2px solid rgba(255,255,255,0.3);
+    opacity: 0.5;
+}
+
+#bx-pager img:hover {
+    border: 2px solid rgba(255,255,255,0.1);
+    opacity: 1;
 }
