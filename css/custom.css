@@ -10,6 +10,11 @@ body {
     font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+html {
+	overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
 .container {
     background-color: rgba(255, 255, 255, 0.1);
 }
