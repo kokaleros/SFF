@@ -13,7 +13,8 @@
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/atc-style-red.css" rel="stylesheet" type="text/css">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet">
     <!--<link type="text/css" rel="stylesheet" href="css/lightslider.css" /> -->
@@ -127,7 +128,39 @@
   <div class="form-group">
     <input type="email" class="form-control text-center input-lg" id="exampleInputEmail2" placeholder="VAŠ EMAIL">
   </div>
-  <button type="submit" class="btn btn-lg">ZAKAŽI</button>
+              <!-- 2. Include script -->
+              <script type="text/javascript">(function () {
+                  if (window.addtocalendar)if (typeof window.addtocalendar.start == "function")return;
+                  if (window.ifaddtocalendar == undefined) {
+                      window.ifaddtocalendar = 1;
+                      var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                      s.type = 'text/javascript';
+                      s.charset = 'UTF-8';
+                      s.async = true;
+                      s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+                      s.src = 'js/atc.min.js';
+
+                      var h = d[g]('body')[0];
+                      h.appendChild(s);
+                  }
+              })();
+              </script>
+
+    <!-- 3. Place event data -->
+    <span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">2017-08-11 21:00:00</var>
+            <var class="atc_date_end">2017-08-11 00:00:00</var>
+            <var class="atc_timezone">Europe/Sarajevo</var>
+            <var class="atc_title">Sarajevo Film Festival</var>
+            <var class="atc_description">Text</var>
+            <var class="atc_location">Sarajevo, Bosna i Hercegovina</var>
+            <var class="atc_organizer">SFF</var>
+            <var class="atc_organizer_email">info@sff.ba</var>
+        </var>
+    </span>
+
+              <button type="submit" class="btn btn-lg">ZAKAŽI</button>
 </form>
         </div>
 
@@ -142,11 +175,8 @@
 
         </div>
 
-
     </div>
-      
     </div>
-
 
   	</div>
     <div class="footer">
@@ -199,7 +229,6 @@
             });
     });
     </script> -->
-
 
 <!-- Codebird.js - required for TWITTER -->
 <script src="social-feed/js/codebird.js"></script>
