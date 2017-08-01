@@ -8,7 +8,7 @@
     <title>Svi smo mi iz istog filma | Početna</title>
 
       <!--Social feed-->
-      <link href="social-feed/css/example.css" rel="stylesheet" type="text/css">
+      <!--<link href="social-feed/css/example.css" rel="stylesheet" type="text/css">-->
       <link href="social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
@@ -201,8 +201,6 @@
     </script> -->
 
 
-<!-- jQuery -->
-<!--<script src="social-feed/js/jquery.js"></script>-->
 <!-- Codebird.js - required for TWITTER -->
 <script src="social-feed/js/codebird.js"></script>
 <!-- doT.js for rendering templates -->
@@ -215,7 +213,7 @@
     $(document).ready(function() {
 
         var updateFeed = function() {
-            var initialQuery  = '@NewMomentBiH';
+            var initialQuery  = '@sarajevofilmfestival';
             initialQuery = initialQuery.replace(" ", "");
             var queryTags = initialQuery.split(",");
             $('.social-feed-container').socialfeed({
