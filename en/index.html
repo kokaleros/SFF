@@ -8,6 +8,7 @@
     <title>SVI SMO MI IZ ISTOG FILMA | HOME</title>
 
     <!-- Bootstrap -->
+    <link href="../css/atc-style-red.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
         <link href="../css/jquery.bxslider.css" rel="stylesheet" />
@@ -89,38 +90,71 @@
 
 		  </div>
         
-      <div class="row">
+      <div class="row rowpadding">
       <div class="col-xs-12"><!-- SLIDER SA THUMBNAILOVIMA -->
 
-			<ul class="bxslider">
-  				<li><a href="#"><img src="../img/slides/slide1.jpg" /></a></li>
-  				<li><a href="about.html"><img src="../img/slides/slide2.jpg" /></a></li>
-			</ul>
+<ul class="bxslider">
+  <li><img src="../img/slides/slide1.jpg" /></li>
+  <li><img src="../img/slides/slide2.jpg" /></li>
+</ul>
 
         </div>
       </div>
 
-      <div class="row signup"><!-- SIGNUP FORMA -->
+        <div class="row signup"><!-- SIGNUP FORMA -->
 
-        <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
-          <img src="../img/email.png" class="img-responsive" alt="Email Signup">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 center-block text-center">
-          <h1 class="text-center">Set up a reminder</h1>
-          <p class="small text-center">Enter your name and e-mail to get notified before the movie premiere.</p>
-          <!-- FORM -->
-          <form class="form-inline">
-  <div class="form-group">
-    <input type="text" class="form-control text-center input-lg" id="exampleInputName2" placeholder="NAME">
-  </div>
-  <div class="form-group">
-    <input type="email" class="form-control text-center input-lg" id="exampleInputEmail2" placeholder="E-MAIL">
-  </div>
-  <button type="submit" class="btn btn-lg">GET NOTIFIED</button>
-</form>
-        </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+                <img src="../img/email.png" class="img-responsive" alt="Email Signup">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 center-block text-center">
+                <h1 class="text-center">Set up a reminder</h1>
+                <!--<p class="small text-center">Upišite vaše ime i e-mail da biste dobili obaveštenje pre početka premijere filma.</p>-->
+                <!-- FORM -->
+                <form class="form-inline">
+                    <!--<div class="form-group">-->
+                    <!--<input type="text" class="form-control text-center input-lg" id="exampleInputName2" placeholder="VAŠE IME">-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                    <!--<input type="email" class="form-control text-center input-lg" id="exampleInputEmail2" placeholder="VAŠ EMAIL">-->
+                    <!--</div>-->
+                    <!-- 2. Include script -->
+                    <script type="text/javascript">(function () {
+                        if (window.addtocalendar)if (typeof window.addtocalendar.start == "function")return;
+                        if (window.ifaddtocalendar == undefined) {
+                            window.ifaddtocalendar = 1;
+                            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                            s.type = 'text/javascript';
+                            s.charset = 'UTF-8';
+                            s.async = true;
+                            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+                            s.src = 'js/atc.min.js';
 
-      </div>
+                            var h = d[g]('body')[0];
+                            h.appendChild(s);
+                        }
+                    })();
+                    </script>
+
+                    <!-- 3. Place event data -->
+                    <span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">2017-08-11 21:00:00</var>
+            <var class="atc_date_end">2017-08-11 00:00:00</var>
+            <var class="atc_timezone">Europe/Sarajevo</var>
+            <var class="atc_title">Sarajevo Film Festival</var>
+            <var class="atc_description">Text</var>
+            <var class="atc_location">Sarajevo, Bosna i Hercegovina</var>
+            <var class="atc_organizer">SFF</var>
+            <var class="atc_organizer_email">info@sff.ba</var>
+        </var>
+    </span>
+
+                    <!--<button type="submit" class="btn btn-lg">ZAKAŽI</button>-->
+                </form>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
+
+        </div>
 
 
     <div class="row rowpadding"><!-- FEED -->
@@ -161,8 +195,10 @@
 </script>
 <!-- SLIDER -->
 <script>
-$(document).ready(function(){
-  $('.bxslider').bxSlider();
+$('.bxslider').bxSlider({
+  pager: false,
+  auto: true,
+  pause: 8000
 });
 </script>
   </body>
