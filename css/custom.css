@@ -1,11 +1,12 @@
 body {
 
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background: #E12725;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #7D060C, #E12725);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #7D060C, #E12725); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #ad2116;
     color: #fff;
     font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
