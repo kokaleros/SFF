@@ -97,18 +97,13 @@
 
 		  </div>
         
-      <div class="row">
+      <div class="row rowpadding">
       <div class="col-xs-12"><!-- SLIDER SA THUMBNAILOVIMA -->
 
 <ul class="bxslider">
-  <li><a href="#"><img src="img/slides/slide1.jpg" /></a></li>
-  <li><a href="o-projektu.html"><img src="img/slides/slide2.jpg" /></a></li>
+  <li><img src="img/slides/slide1.jpg" /></li>
+  <li><img src="img/slides/slide2.jpg" /></li>
 </ul>
-
-<div id="bx-pager">
-  <a data-slide-index="0" href=""><img src="img/thumb/slide1t.jpg" /></a>
-  <a data-slide-index="1" href=""><img src="img/thumb/slide2t.jpg" /></a>
-</div>
 
         </div>
       </div>
@@ -304,9 +299,8 @@
 
 <script>
 $('.bxslider').bxSlider({
-  pagerCustom: '#bx-pager',
-  captions: true,
-  auto: true,
+  pause: 1000,
+  pager: false
 });
 </script>
 

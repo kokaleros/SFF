@@ -97,12 +97,6 @@
   				<li><a href="about.html"><img src="../img/slides/slide2.jpg" /></a></li>
 			</ul>
 
-<div id="bx-pager">
-  <a data-slide-index="0" href=""><img src="../img/thumb/slide1t.jpg" /></a>
-  <a data-slide-index="1" href=""><img src="../img/thumb/slide2t.jpg" /></a>
-</div>
-
-
         </div>
       </div>
 
@@ -167,8 +161,8 @@
 </script>
 <!-- SLIDER -->
 <script>
-$('.bxslider').bxSlider({
-  pagerCustom: '#bx-pager'
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
 });
 </script>
   </body>
