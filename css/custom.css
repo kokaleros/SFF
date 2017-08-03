@@ -346,3 +346,25 @@ transition: color 0.05s ease-in-out;
     margin-bottom: 20px;
 }
 
+@media (max-width: 970px) {
+    .social-feed-container .social-feed-element {
+        margin-top: 0px !important;
+        max-width: 48%;
+        display: block;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .social-feed-container .social-feed-element {
+        margin-top: 0px !important;
+        max-width: 100%;
+        display: block;
+        float: none;
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }
+}
