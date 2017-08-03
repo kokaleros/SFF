@@ -77,8 +77,9 @@
 
   	<div class="container">
 
-    <div class="row"><img src="../img/header.png" class="img-responsive" alt="Filmska traka"></div>
-  			
+        <div class="row header-desktop"><img src="../img/header.png" class="img-responsive" alt="Filmska traka"></div>
+        <div class="row header-mobile"><img src="../img/header-small.png" class="img-responsive" alt="Filmska traka"></div>
+
 		<div class="row rowpadding"><!-- Logotipi i countdown timer -->
 
       <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
@@ -103,10 +104,29 @@
       <div class="row rowpadding">
       <div class="col-xs-12"><!-- SLIDER SA THUMBNAILOVIMA -->
 
-<ul class="bxslider">
-  <li><img src="../img/slides/slide1.jpg" /></li>
-  <li><img src="../img/slides/slide2.jpg" /></li>
-</ul>
+          <!--Desktop slider-->
+          <div class="hidden-xs">
+              <ul class="bxslider">
+                  <li><img src="../img/slides/slide1.jpg"/></li>
+                  <li>
+                      <a href="atlantic-grupa.html">
+                          <img src="../img/slides/slide2.jpg"/>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <!--Mobile slider-->
+          <div class="hidden-lg hidden-md hidden-sm small-displays">
+              <ul class="bxslider">
+                  <li><img src="../img/slides/slide1-sm.jpg"/></li>
+                  <li>
+                      <a href="atlantic-grupa.html">
+                          <img src="../img/slides/slide2-sm.jpg"/>
+                      </a>
+                  </li>
+              </ul>
+          </div>
 
         </div>
       </div>

@@ -357,6 +357,9 @@ transition: color 0.05s ease-in-out;
     }
 }
 
+.header-mobile{
+    display: none!important;
+}
 
 @media (max-width: 600px) {
     .social-feed-container .social-feed-element {
@@ -367,11 +370,39 @@ transition: color 0.05s ease-in-out;
         margin-right: 0%;
         margin-bottom: 20px;
     }
+
+    .header-mobile{
+        display: block !important;
+    }
+
+    .header-desktop{
+        display: none;
+    }
 }
 
+
+
+@media (max-width: 400px) {
+    .atlantic-logo img{
+        max-width: 85px;
+    }
+}
 
 @media (max-width: 350px) {
     .social-feed-container .social-feed-element .content img:first-child{
        display: none !important;
     }
+}
+
+.small-displays .bx-wrapper{
+    border: none !important;
+    background: transparent !important;
+}
+
+.small-displays.col-xs-12{
+    padding: 0px !important;
+}
+
+.small-displays.rowpadding{
+    padding: 0px !important;
 }
