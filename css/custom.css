@@ -8,7 +8,7 @@ background: linear-gradient(to bottom, #7D060C, #E12725); /* W3C, IE 10+/ Edge, 
     -o-background-size: cover;
     background-size: cover;
     color: #fff;
-    font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
 }
 
 html {
@@ -366,5 +366,12 @@ transition: color 0.05s ease-in-out;
         float: none;
         margin-right: 0%;
         margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .social-feed-container .social-feed-element .content img:first-child{
+       display: none !important;
     }
 }
