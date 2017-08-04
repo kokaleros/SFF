@@ -406,3 +406,10 @@ transition: color 0.05s ease-in-out;
 .small-displays.rowpadding{
     padding: 0px !important;
 }
+
+#share {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+
+}
