@@ -125,12 +125,12 @@
     <script src="../js/bootstrap.min.js"></script>
   <script src="../js/jquery.countdown.min.js"></script>
 <script>
-    $('.clock').countdown('2017/8/11', function (event) {
+    $('.clock').countdown("2017/8/12 21:00:00", function (event) {
         var $this = $(this).html(event.strftime(''
-            + '<div class="countDownHolder"><span class="tajmer">%d</span><p>days</p></div>'
-            + '<div class="countDownHolder"><span class="tajmer">%H</span><p>hours</p></div>'
-            + '<div class="countDownHolder"><span class="tajmer">%M</span><p>minutes</p></div>'
-            + '<div class="countDownHolder"><span class="tajmer">%S</span><p>seconds</p></div>'));
+            + '<div class="countDownHolder"><span class="tajmer">%D</span><p>dana</p></div>'
+            + '<div class="countDownHolder"><span class="tajmer">%H</span><p>sati</p></div>'
+            + '<div class="countDownHolder"><span class="tajmer">%M</span><p>minuta</p></div>'
+            + '<div class="countDownHolder"><span class="tajmer">%S</span><p>sekundi</p></div>'));
     });
 </script>
 <!-- SLIDER -->
