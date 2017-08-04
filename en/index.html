@@ -21,6 +21,12 @@
 	<link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
 
+      <!--Social Share-->
+      <link rel="stylesheet" type="text/css" href="../css/jssocials.css" />
+      <link rel="stylesheet" type="text/css" href="../css/jssocials-theme-flat.css" />
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -156,8 +162,8 @@
                             s.type = 'text/javascript';
                             s.charset = 'UTF-8';
                             s.async = true;
-                            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
-                            s.src = 'js/atc.min.js';
+//                            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+                            s.src = '../js/atc.min.js';
 
                             var h = d[g]('body')[0];
                             h.appendChild(s);
@@ -201,7 +207,7 @@
       <div class="row rowpadding">
         <div class="col-xs-12">
           <p class="small text-center center-block rowpadding">© 2017 Atlantic Grupa.  All rights reserved.</p>
-          <a href="http://www.atlantic.hr/en/" target="_blank"><img src="../img/aglogo.png" class="img-responsive text-center center-block" alt="Atlantic Group"></a>
+          <a href="http://www.atlantic.hr/en/" target="_blank"><img src="../img/aglogo.png" style="padding-left: 100px;" class="img-responsive text-center center-block" alt="Atlantic Group"></a>
         </div>
       </div>
     </div>
@@ -231,5 +237,19 @@ $('.bxslider').bxSlider({
   pause: 8000
 });
 </script>
+
+
+<div id="share"></div>
+
+<script src="../js/jssocials.js"></script>
+<script>
+    $("#share").jsSocials({
+        showLabel: false,
+        showCount: false,
+        shares: ["twitter", "facebook", "linkedin"]
+    });
+</script>
+
+
   </body>
 </html>
