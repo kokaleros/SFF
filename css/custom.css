@@ -160,7 +160,7 @@ input:focus:-ms-input-placeholder {
     color: #fff;
     background-color: transparent;
     font-weight: bold;
-    border-radius: none;
+    border-radius: 0;
     -webkit-transition: color 0.1s ease-in-out;
     -moz-transition: color 0.1s ease-in-out;
     -ms-transition: color 0.1s ease-in-out;
@@ -178,8 +178,8 @@ input:focus:-ms-input-placeholder {
 }
 
 .navbar-default .container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .active {
@@ -187,7 +187,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .navbar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -209,7 +209,7 @@ input:focus:-ms-input-placeholder {
 
 .navbar-nav li .dropdown-menu {
     background-color: #000;
-    min-width: 0px;
+    min-width: 0;
     padding: 2px;
 }
 
@@ -252,8 +252,8 @@ input:focus:-ms-input-placeholder {
 .countDownHolder span{
     display: block;
     width: 100%;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .countDownHolder p{
