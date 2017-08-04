@@ -354,6 +354,10 @@ input:focus:-ms-input-placeholder {
     display: none!important;
 }
 
+.sff-logo img{
+    display: none;
+}
+
 @media (max-width: 600px) {
     .social-feed-container .social-feed-element {
         margin-top: 0 !important;
