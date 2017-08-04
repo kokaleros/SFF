@@ -27,6 +27,10 @@
       <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
       <meta name="theme-color" content="#ffffff">
 
+      <!--Social Share-->
+      <link rel="stylesheet" type="text/css" href="css/jssocials.css" />
+      <link rel="stylesheet" type="text/css" href="css/jssocials-theme-flat.css" />
+
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -196,7 +200,7 @@
       <div class="row rowpadding">
         <div class="col-xs-12">
           <p class="small text-center center-block rowpadding">© 2017 Atlantic Grupa.  Sva prava rezervisana.</p>
-          <a href="http://www.atlantic.hr/" target="_blank"><img src="./img/aglogo.png" class="img-responsive text-center center-block" alt="Atlantik Group"></a>
+          <a href="http://www.atlantic.hr/" target="_blank"><img src="./img/aglogo.png" style="padding-left: 100px;" class="img-responsive text-center center-block" alt="Atlantik Group"></a>
         </div>
       </div>
     </div>
@@ -286,12 +290,12 @@
 //                    source: 'all'
 //                },
                 // INSTAGRAM
-//                instagram: {
-//                    accounts: queryTags,
-//                    limit: 2,
-//                    client_id: '425414249ef4474a94cf3a84e3bcb985',
-//                    access_token: '211800137.1677ed0.d8df95663cbf4ed9b6c0ec2fdf69660e'
-//                },
+                instagram: {
+                    accounts: queryTags,
+                    limit: 2,
+                    client_id: '425414249ef4474a94cf3a84e3bcb985',
+                    access_token: '211800137.4254142.f2479daf5b9d487197caebc993c3cd0d'
+                },
 
                 // GENERAL SETTINGS
                 length: 200,
@@ -320,6 +324,17 @@ $('.bxslider').bxSlider({
   pause: 15000,
 });
 </script>
+
+  <div id="share"></div>
+
+  <script src="js/jssocials.js"></script>
+  <script>
+      $("#share").jsSocials({
+          showLabel: false,
+          showCount: false,
+          shares: ["twitter", "facebook", "linkedin"]
+      });
+  </script>
 
   </body>
 </html>

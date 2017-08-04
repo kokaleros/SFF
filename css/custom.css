@@ -378,6 +378,14 @@ transition: color 0.05s ease-in-out;
     .header-desktop{
         display: none;
     }
+
+    .atcb-link {
+        font-size: 15px !important;
+        padding: 6px 30px 6px 30px !important;
+        -webkit-border-radius: 4px !important;
+        -moz-border-radius: 4px !important;
+        border-radius: 4px !important;
+    }
 }
 
 
@@ -392,6 +400,14 @@ transition: color 0.05s ease-in-out;
     .social-feed-container .social-feed-element .content img:first-child{
        display: none !important;
     }
+
+    .atcb-link {
+        font-size: 15px !important;
+        padding: 6px 15px 6px 15px !important;
+        -webkit-border-radius: 4px !important;
+        -moz-border-radius: 4px !important;
+        border-radius: 4px !important;
+    }
 }
 
 .small-displays .bx-wrapper{
@@ -405,4 +421,10 @@ transition: color 0.05s ease-in-out;
 
 .small-displays.rowpadding{
     padding: 0px !important;
+}
+
+#share {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
 }
