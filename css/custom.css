@@ -379,13 +379,34 @@ input:focus:-ms-input-placeholder {
         -moz-border-radius: 4px !important;
         border-radius: 4px !important;
     }
+
+
 }
 
+@media (max-width: 767px) {
+    .atlantic-logo-1 {
+        text-align: center;
+    }
 
+    .atlantic-logo-1 img {
+        display: block;
+        margin: 0 auto;
+        padding-left: 100px;
+    }
+}
 
 @media (max-width: 400px) {
     .atlantic-logo img{
         max-width: 85px;
+    }
+
+    .countDownHolder{
+        font-size: 0.5em;
+        margin-right: 10px;
+    }
+
+    .atlantic-logo-1 img {
+        padding-left: 70px;
     }
 }
 
