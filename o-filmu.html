@@ -10,14 +10,20 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
-    	<!-- FAVICONS -->
+
+    <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 	<link rel="manifest" href="favicons/manifest.json">
 	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
+
+    <!--Social Share-->
+    <link rel="stylesheet" type="text/css" href="css/jssocials.css" />
+    <link rel="stylesheet" type="text/css" href="css/jssocials-theme-flat.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,11 +85,11 @@
   			
 		<div class="row rowpadding"><!-- Logotipi i countdown timer -->
 
-      <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+      <div class="col-xs-6 col-sm-6 col-md-2 col-lg-3">
         <a href="http://www.atlantic.hr/"><img src="./img/aglogo.png" class="img-responsive" alt="Atlantic Grupa"></a>
       </div>
 
-      <div class="hidden-xs hidden-sm col-md-7 col-lg-7">
+      <div class="hidden-xs hidden-sm col-md-7 col-lg-6">
         <div class="clock"></div>
       </div>
 
@@ -104,7 +110,7 @@
       <div class="row rowpadding">
         <div class="col-xs-12">
           <p class="small text-center center-block rowpadding">© 2017 Atlantic Grupa.  Sva prava rezervisana.</p>
-          <a href="http://www.atlantic.hr/" target="_blank"><img src="./img/aglogo.png" class="img-responsive text-center center-block" alt="Atlantik Group"></a>
+          <a href="http://www.atlantic.hr/" target="_blank"><img src="./img/aglogo.png" style="padding-left: 100px;" class="img-responsive text-center center-block" alt="Atlantik Group"></a>
         </div>
       </div>
     </div>
@@ -124,5 +130,18 @@
             + '<div class="countDownHolder"><span class="tajmer">%S</span><p>sekundi</p></div>'));
     });
 </script>
+
+<div id="share"></div>
+
+<script src="js/jssocials.js"></script>
+<script>
+    $("#share").jsSocials({
+        showLabel: false,
+        showCount: false,
+        shares: ["twitter", "facebook", "linkedin"]
+    });
+</script>
+
+
   </body>
 </html>
