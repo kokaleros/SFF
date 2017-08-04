@@ -1,10 +1,10 @@
 body {
 
-background: #de2427;
-background: -moz-linear-gradient(top, #de2427 0%, #cc2129 100%);
-background: -webkit-linear-gradient(top, #de2427 0%,#cc2129 100%);
-background: linear-gradient(to bottom, #de2427 0%,#cc2129 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de2427', endColorstr='#cc2129',GradientType=0 );
+    background: #de2427;
+    background: -moz-linear-gradient(top, #de2427 0%, #cc2129 100%);
+    background: -webkit-linear-gradient(top, #de2427 0%,#cc2129 100%);
+    background: linear-gradient(to bottom, #de2427 0%,#cc2129 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de2427', endColorstr='#cc2129',GradientType=0 );
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -283,11 +283,11 @@ input:focus:-ms-input-placeholder {
     color: #fff;
     text-decoration: underline;
     font-weight: bold;
-        -webkit-transition: color 0.05s ease-in-out;
--moz-transition: color 0.05s ease-in-out;
--ms-transition: color 0.05s ease-in-out;
--o-transition: color 0.05s ease-in-out;
-transition: color 0.05s ease-in-out;
+    -webkit-transition: color 0.05s ease-in-out;
+    -moz-transition: color 0.05s ease-in-out;
+    -ms-transition: color 0.05s ease-in-out;
+    -o-transition: color 0.05s ease-in-out;
+    transition: color 0.05s ease-in-out;
 }
 
 .linkovi:hover {
@@ -331,7 +331,7 @@ transition: color 0.05s ease-in-out;
 }
 
 .social-feed-container .social-feed-element {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
     max-width: 31%;
     display: block;
     float: left;
@@ -356,7 +356,7 @@ transition: color 0.05s ease-in-out;
 
 @media (max-width: 600px) {
     .social-feed-container .social-feed-element {
-        margin-top: 0px !important;
+        margin-top: 0 !important;
         max-width: 100%;
         display: block;
         float: none;
