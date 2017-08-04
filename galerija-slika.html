@@ -174,7 +174,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/lightslider.js"></script>
     <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
 <script>
@@ -186,28 +185,5 @@
             + '<div class="countDownHolder"><span class="tajmer">%S</span><p>sekundi</p></div>'));
     });
 </script>
-<!-- SLIDER -->
-    <script>
-       $(document).ready(function() {
-      $("#content-slider").lightSlider({
-                loop:true,
-                keyPress:true
-            });
-            $('#image-gallery').lightSlider({
-                gallery:true,
-                item:1,
-                thumbItem:7,
-                thumbMargin:30,
-                slideMargin: 0,
-                speed:1000,
-                auto:true,
-                loop:true,
-                mode:'slide',
-                onSliderLoad: function() {
-                    $('#image-gallery').removeClass('cS-hidden');
-                }  
-            });
-    });
-    </script>
   </body>
 </html>
