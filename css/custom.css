@@ -428,3 +428,9 @@ transition: color 0.05s ease-in-out;
     text-align: center;
     margin: 0 auto;
 }
+
+.atcb-item-link {
+	background-color: #fff;
+	color: #fff;
+	width: 100%;
+}
