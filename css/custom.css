@@ -1,8 +1,10 @@
 body {
 
-    background: #ed1c24;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #cc2129, #de2427);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #cc2129, #de2427); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #de2427;
+background: -moz-linear-gradient(top, #de2427 0%, #cc2129 100%);
+background: -webkit-linear-gradient(top, #de2427 0%,#cc2129 100%);
+background: linear-gradient(to bottom, #de2427 0%,#cc2129 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de2427', endColorstr='#cc2129',GradientType=0 );
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,12 +14,7 @@ body {
 }
 
 html {
-	overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
-}
-
-.container {
-    /*background-color: rgba(255, 255, 255, 0.1); */
 }
 
 .clock {
@@ -29,10 +26,6 @@ html {
     font-size: 2em;
     text-shadow: 1px 1px 3px #000000;
     font-weight: 100;
-}
-
-.lSSlideWrapper {
-    border: 5px solid rgba(0, 0, 0, .5);
 }
 
 .signup {
@@ -49,7 +42,7 @@ html {
 }
 
 .form-control {
-    border-radius: 0px;
+    border-radius: 0;
     border: none;
     box-shadow: none;
     margin: 10px;
@@ -72,7 +65,7 @@ html {
 }
 
 .btn {
-    border-radius: 0px;
+    border-radius: 0;
     background-color: #DA291C;
     color: #fff;
     border: none;
@@ -156,7 +149,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .navbar-default {
-    border-radius: 0px;
+    border-radius: 0;
     background-color: #000;
     border: none;
     color: #fff;
@@ -415,12 +408,12 @@ transition: color 0.05s ease-in-out;
     background: transparent !important;
 }
 
-.small-displays.col-xs-12{
-    padding: 0px !important;
+.small-displays .col-xs-12{
+    padding: 0 !important;
 }
 
-.small-displays.rowpadding{
-    padding: 0px !important;
+.small-displays .rowpadding{
+    padding: 0 !important;
 }
 
 #share {
