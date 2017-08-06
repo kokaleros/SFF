@@ -11,8 +11,7 @@
     <link href="../css/atc-style-red.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
-        <link href="../css/jquery.bxslider.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&amp;subset=latin-ext" rel="stylesheet">
+    <link href="../css/jquery.bxslider.css" rel="stylesheet" />
 	<!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
@@ -43,6 +42,12 @@
  ga('send', 'pageview');
 
 </script>
+      
+<meta property="og:title" content="SVI SMO MI IZ ISTOG FILMA" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.svismomiizistogfilma.com/" />
+<meta property="og:image" content="http://svismomiizistogfilma.nmdigita.mycpanel.rs/img/og.jpg" />
+<meta property="og:description" content="Pozivamo te na premijerno online prikazivanje filma Druga strana nade (The Other Side of Hope), finskog reditelja Aki Kaurismäki-a. Vidimo se 12. avgusta na sajtu www.svismoizistogfilma.com" />
   </head>
   <body>
 
@@ -89,7 +94,7 @@
 		<div class="row rowpadding"><!-- Logotipi i countdown timer -->
 
             <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3 atlantic-logo-1">
-                <a href="http://www.atlantic.hr/"><img src="../img/aglogo.png" class="img-responsive" alt="Atlantic Grupa"></a>
+                <a href="http://www.atlantic.hr/en"><img src="../img/aglogo.png" class="img-responsive" alt="Atlantic Grupa"></a>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-8 col-lg-6">
@@ -136,20 +141,12 @@
         <div class="row signup"><!-- SIGNUP FORMA -->
 
             <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
-                <img src="../img/email.png" class="img-responsive" alt="Email Signup">
+                <img src="../img/email.png" class="img-responsive" alt="Preuzmi podsjetnik">
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 center-block text-center">
-                <h1 class="text-center">Set up a reminder</h1>
-                <!--<p class="small text-center">Upišite vaše ime i e-mail da biste dobili obaveštenje pre početka premijere filma.</p>-->
-                <!-- FORM -->
+                <h1 class="text-center">Upiši u kalendar</h1>
+
                 <form class="form-inline">
-                    <!--<div class="form-group">-->
-                    <!--<input type="text" class="form-control text-center input-lg" id="exampleInputName2" placeholder="VAŠE IME">-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                    <!--<input type="email" class="form-control text-center input-lg" id="exampleInputEmail2" placeholder="VAŠ EMAIL">-->
-                    <!--</div>-->
-                    <!-- 2. Include script -->
                     <script type="text/javascript">(function () {
                         if (window.addtocalendar)if (typeof window.addtocalendar.start == "function")return;
                         if (window.ifaddtocalendar == undefined) {
@@ -158,7 +155,7 @@
                             s.type = 'text/javascript';
                             s.charset = 'UTF-8';
                             s.async = true;
-//                            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+                            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
                             s.src = '../js/atc.min.js';
 
                             var h = d[g]('body')[0];
@@ -170,18 +167,17 @@
                     <!-- 3. Place event data -->
                     <span class="addtocalendar atc-style-blue">
         <var class="atc_event">
-            <var class="atc_date_start">2017-08-11 21:00:00</var>
-            <var class="atc_date_end">2017-08-11 00:00:00</var>
+            <var class="atc_date_start">2017-08-12 21:00:00</var>
+            <var class="atc_date_end">2017-08-12 23:00:00</var>
             <var class="atc_timezone">Europe/Sarajevo</var>
-            <var class="atc_title">Sarajevo Film Festival</var>
-            <var class="atc_description">Text</var>
-            <var class="atc_location">Sarajevo, Bosna i Hercegovina</var>
+            <var class="atc_title">Atlantic Grupa - Sarajevo Film Festival</var>
+            <var class="atc_description">Zakažite podsetnik za gledanje live premijere filma "The Other Side of Hope"
+            http://www.svismomiizistogfilma.com/</var>
+            <var class="atc_location">www.svismomiizistogfilma.com</var>
             <var class="atc_organizer">SFF</var>
-            <var class="atc_organizer_email">info@sff.ba</var>
+            <var class="atc_organizer_email"> </var>
         </var>
     </span>
-
-                    <!--<button type="submit" class="btn btn-lg">ZAKAŽI</button>-->
                 </form>
             </div>
             <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
@@ -189,12 +185,14 @@
         </div>
 
 
-    <div class="row rowpadding"><!-- FEED -->
+        <div class="row rowpadding"><!-- FEED -->
 
-    <div class="col-xs-12">
-    <img src="http://via.placeholder.com/1200x300?text=MestoZaFeed" class="img-responsive" alt="Svi smo mi iz istog filma">
+    <div class="col-xs-12 feed-place" style="height: 280px; overflow: hidden;">
+        <div class="masonry social-feed-container" style="width: 100%; height: 100%; position: relative; overflow: auto;">
+
+        </div>
+
     </div>
-      
     </div>
 
 
