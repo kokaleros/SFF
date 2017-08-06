@@ -223,12 +223,84 @@
             + '<div class="countDownHolder"><span class="tajmer">%S</span><p>sekundi</p></div>'));
     });
 </script>
+      
+<!-- Codebird.js - required for TWITTER -->
+<script src="social-feed/js/codebird.js"></script>
+<!-- doT.js for rendering templates -->
+<script src="social-feed/js/doT.min.js"></script>
+<!-- Moment.js for showing "time ago" -->
+<script src="social-feed/js/moment.min.js"></script>
+<!-- Social-feed js -->
+<script src="social-feed/js/jquery.socialfeed.js"></script>
+<script>
+    $(document).ready(function() {
+
+        var updateFeed = function() {
+            var initialQuery  = '@sarajevofilmfestival, #sarajevofilmfestival';
+            initialQuery = initialQuery.replace(" ", "");
+            var queryTags = initialQuery.split(",");
+            $('.social-feed-container').socialfeed({
+                // FACEBOOK
+                facebook: {
+                    accounts: queryTags,
+                    limit: 12,
+                    access_token: '1709033135790970|671d9a9bdbfee3e11da5784e092f0c73'
+                },
+                // GOOGLEPLUS
+//                google: {
+//                    accounts: queryTags,
+//                    limit: 2,
+//                    access_token: 'AIzaSyDAelFmJhg6BSUbSLe8UT7s-G53tL4_KRg'
+//                },
+//                 Twitter
+//                twitter: {
+//                    accounts: queryTags,
+//                    limit: 2,
+//                    consumer_key: 'gzS5uVdGqQVjwpypfdX4Jx8b4', // make sure to have your app read-only
+//                    consumer_secret: 'y4q9qlmhSKjFamhFkFpjMtltjgoHrFSGudyR1COQuu50bhlwYo', // make sure to have your app read-only
+//                },
+                // VKONTAKTE
+//                vk: {
+//                    accounts: queryTags,
+//                    limit: 2,
+//                    source: 'all'
+//                },
+                // INSTAGRAM
+                instagram: {
+                    accounts: queryTags,
+                    limit: 2,
+                    client_id: '425414249ef4474a94cf3a84e3bcb985',
+                    access_token: '211800137.4254142.f2479daf5b9d487197caebc993c3cd0d'
+                },
+
+                // GENERAL SETTINGS
+                length: 200,
+                show_media: true,
+                // Moderation function - if returns false, template will have class hidden
+                moderation: function(content) {
+                    return (content.text) ? content.text.indexOf('fuck') == -1 : true;
+                },
+                //update_period: 5000,
+                // When all the posts are collected and displayed - this function is evoked
+                callback: function() {
+                    console.log('all posts are collected');
+                }
+            });
+        };
+
+        updateFeed();
+
+    });
+</script>
+ 
+      
+      
 <!-- SLIDER -->
 <script>
 $('.bxslider').bxSlider({
   pager: false,
   auto: true,
-  pause: 8000
+  pause: 15000,
 });
 </script>
 
