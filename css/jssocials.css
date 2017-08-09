@@ -54,3 +54,15 @@ img.jssocials-share-logo {
 .jssocials-share-count {
   line-height: 1.5em;
   vertical-align: middle; }
+
+img.attachment{
+  max-width: 100%;
+}
+
+.social-feed-element{
+  background: #ffffff !important;
+}
+
+.social-feed-element .media-body div {
+  color: #666;
+  line-height: 20px;}
