@@ -170,7 +170,7 @@
                     </script>
 
                     <!-- 3. Place event data -->
-                    <span class="addtocalendar atc-style-blue" data-on-button-click="gaAddClick">
+                    <span class="addtocalendar atc-style-blue" data-on-calendar-click="test">
         <var class="atc_event">
             <var class="atc_date_start">2017-08-12 21:00:00</var>
             <var class="atc_date_end">2017-08-12 23:00:00</var>
@@ -281,7 +281,7 @@
                 // GENERAL SETTINGS
                 length: 200,
                 show_media: true,
-                template: "http://nmdigita.mycpanel.rs/svismomiizistogfilma/social-feed/template.html",
+                template: "http://svismomiizistogfilma.com/social-feed/template.html",
                 // Moderation function - if returns false, template will have class hidden
                 moderation: function(content) {
                     return (content.text) ? content.text.indexOf('fuck') == -1 : true;
@@ -324,11 +324,19 @@ $('.bxslider').bxSlider({
 
 <script type="text/javascript">
 
-    function gaAddClick() {
-        console.log("Calendar required!");
-        ga('send', 'event', 'Kalendar podsjetnik - eng', 'download', 'SFF');
+    function gaAddClick(tip) {
+        console.log("Calendar required! | " + tip);
+        ga('send', 'event', 'Kalendar podsjetnik-eng ' + tip, 'download', 'SFF');
     }
 
+    $(".atcb-item-link").click(function () {
+        console.log('da');
+    })
+
+    function test(mouseEvent) {
+        var tipKalendara = $(this).text();
+        gaAddClick(tipKalendara);
+    }
 </script>
 
   </body>

@@ -169,7 +169,7 @@
                     </script>
 
                     <!-- 3. Place event data -->
-                    <span class="addtocalendar atc-style-blue" data-on-button-click="gaAddClick">
+                    <span class="addtocalendar atc-style-blue" data-on-calendar-click="test">
         <var class="atc_event">
             <var class="atc_date_start">2017-08-12 21:00:00</var>
             <var class="atc_date_end">2017-08-12 23:00:00</var>
@@ -317,12 +317,20 @@ $('.bxslider').bxSlider({
   </script>
 
   <script type="text/javascript">
-      
-      function gaAddClick() {
-          console.log("Calendar required!");
-          ga('send', 'event', 'Kalendar podsjetnik', 'download', 'SFF');
+
+      function gaAddClick(tip) {
+          console.log("Calendar required! | " + tip);
+          ga('send', 'event', 'Kalendar podsjetnik ' + tip, 'download', 'SFF');
       }
-      
+
+      $(".atcb-item-link").click(function () {
+          console.log('da');
+      })
+
+      function test(mouseEvent) {
+          var tipKalendara = $(this).text();
+          gaAddClick(tipKalendara);
+      }
   </script>
   
   </body>
