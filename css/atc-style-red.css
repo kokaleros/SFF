@@ -155,7 +155,7 @@
 .atc-style-blue .atcb-item-link:active,
 .atc-style-blue .atcb-item-link:focus
 {
-    color: #fff;
+    color: rgba(0, 0, 0,0.5);
 }
 
 .atc-style-blue .atcb-item.hover,
