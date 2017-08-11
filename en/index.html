@@ -326,7 +326,18 @@ $('.bxslider').bxSlider({
 
     function gaAddClick(tip) {
         console.log("Calendar required! | " + tip);
-        ga('send', 'event', 'Kalendar podsjetnik-eng ' + tip, 'download', 'SFF');
+//        ga('send', 'event', 'Kalendar podsjetnik-eng ' + tip, 'download', 'SFF');
+
+        switch (tip){
+            case "iCalendar" :          tip = "icalendar"; break;
+            case "Google Calendar" :    tip = "googlecalendar"; break;
+            case "Outlook" :            tip = "outlook"; break;
+            case "Outlook Online" :     tip = "outlookonline"; break;
+            case "Yahoo! Calendar" :    tip = "yahoo"; break;
+            default: tip = "icalendar";
+        }
+
+        $.get("counter.php?name=" + tip, function(data, status){});
     }
 
     $(".atcb-item-link").click(function () {
